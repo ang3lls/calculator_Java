@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui_calculadora">
+  <grid id="27dc6" binding="tela" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="20" bottom="0" right="20"/>
+    <constraints>
+      <xy x="-6" y="20" width="449" height="264"/>
+    </constraints>
+    <properties>
+      <background color="-395272"/>
+      <enabled value="true"/>
+      <font name="Saab" size="20" style="0"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="c56fc" class="javax.swing.JTextField" binding="display">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="2" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-4854574"/>
+          <editable value="true"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+        </properties>
+      </component>
+      <component id="a8e93" class="javax.swing.JButton" binding="buttonTwo">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="2"/>
+        </properties>
+      </component>
+      <component id="b59c8" class="javax.swing.JButton" binding="buttonFive">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="5"/>
+        </properties>
+      </component>
+      <component id="ad7be" class="javax.swing.JButton" binding="buttonEight">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="8"/>
+        </properties>
+      </component>
+      <component id="23769" class="javax.swing.JButton" binding="buttonSeven">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <foreground color="-12171706"/>
+          <text value="7"/>
+        </properties>
+      </component>
+      <component id="c1e10" class="javax.swing.JButton" binding="buttonFour">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="4"/>
+          <verticalAlignment value="3"/>
+        </properties>
+      </component>
+      <component id="bab9f" class="javax.swing.JButton" binding="buttonOne">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="1"/>
+        </properties>
+        <clientProperties>
+          <hideActionText class="java.lang.Boolean" value="true"/>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
+      </component>
+      <component id="8cd4e" class="javax.swing.JButton" binding="buttonNine">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="9"/>
+        </properties>
+      </component>
+      <component id="d3c2" class="javax.swing.JButton" binding="buttonSix">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="6"/>
+        </properties>
+      </component>
+      <component id="1e16f" class="javax.swing.JButton" binding="buttonThree">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="3"/>
+        </properties>
+      </component>
+      <component id="c58aa" class="javax.swing.JButton" binding="buttonMult">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="X"/>
+        </properties>
+      </component>
+      <component id="817d6" class="javax.swing.JButton" binding="buttonSub">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="-"/>
+        </properties>
+      </component>
+      <component id="5d43f" class="javax.swing.JButton" binding="buttonAd">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="+"/>
+        </properties>
+      </component>
+      <component id="dade0" class="javax.swing.JButton" binding="buttonDiv">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value=":"/>
+          <verticalAlignment value="1"/>
+          <verticalTextPosition value="1"/>
+        </properties>
+      </component>
+      <component id="45763" class="javax.swing.JButton" binding="buttonZero">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="0"/>
+        </properties>
+      </component>
+      <component id="34cce" class="javax.swing.JButton" binding="buttonRes">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="="/>
+        </properties>
+      </component>
+      <component id="bafbb" class="javax.swing.JButton" binding="buttonVirgula">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="."/>
+        </properties>
+      </component>
+      <component id="4746d" class="javax.swing.JButton" binding="buttonCE">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3816508"/>
+          <enabled value="true"/>
+          <font name="Saab" size="20" style="0"/>
+          <text value="CE"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
