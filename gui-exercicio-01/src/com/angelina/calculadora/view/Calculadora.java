@@ -1,20 +1,10 @@
 package com.angelina.calculadora.view;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-
 import com.angelina.calculadora.services.Operacao;
 
-import java.awt.Label;
-import java.awt.TextField;
-import javax.swing.JComboBox;
-import javax.swing.JButton;
-import javax.swing.DefaultComboBoxModel;
-
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
 
 public class Calculadora extends JFrame {
 
@@ -24,6 +14,7 @@ public class Calculadora extends JFrame {
 	private TextField txtNumero1;
 	private TextField txtNumero2;
 	private Label result;
+	private JComboBox<String> choseOp;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(() -> {
@@ -68,7 +59,7 @@ public class Calculadora extends JFrame {
 	}
 	
 	private JComboBox<String> comboBoxCompBox() {
-		JComboBox<String> choseOp = new JComboBox<>();
+		choseOp = new JComboBox<>();
 		choseOp.setModel(new DefaultComboBoxModel<>(new String[] {"Somar", "Subtrair", "Multiplicar", "Dividir"}));
 		choseOp.setBounds(25, 228, 247, 24);
 		contentPane.add(choseOp);
@@ -76,7 +67,7 @@ public class Calculadora extends JFrame {
 	}
 	
 	private void txtNumero1() {
-		TextField txtNumero1 = new TextField();
+		txtNumero1 = new TextField();
 		txtNumero1.setBounds(25, 67, 247, 26);
 		contentPane.add(txtNumero1);
 	}
@@ -96,7 +87,7 @@ public class Calculadora extends JFrame {
 	}
 	
 	private void txtNumero2() {
-		TextField txtNumero2 = new TextField();
+		txtNumero2 = new TextField();
 		txtNumero2.setBounds(25, 141, 247, 26);
 		contentPane.add(txtNumero2);
 		
@@ -111,7 +102,7 @@ public class Calculadora extends JFrame {
 	}
 	
 	private void result() {
-		Label result = new Label("0");
+		result = new Label("0");
 		result.setAlignment(Label.CENTER);
 		result.setBounds(109, 347, 69, 21);
 		contentPane.add(result);
@@ -119,24 +110,23 @@ public class Calculadora extends JFrame {
 	
 	private void executar() {
 		try {
-			double num1 = Double.parseDouble(txtNumero1.getText());
-			double num2 = Double.parseDouble(txtNumero2.getText());
-			Double resultado = (double) 0;
-			String totalString = resultado.toString();
-			
-			if(comboBoxCompBox().getSelectedItem() == "Somar") {
+			String numTxt1 = txtNumero1.getText();
+			Double num1 = Double.parseDouble(numTxt1);
+			Double num2 = Double.parseDouble(txtNumero2.getText());
+			Double resultado = null;
+			if(choseOp.getSelectedItem().equals("Somar")) {
 				resultado = Operacao.somar(num1, num2);
 			}
-			else if(comboBoxCompBox().getSelectedItem() == "Subtrair") {
+			else if(choseOp.getSelectedItem().equals("Subtrair")) {
 				resultado = Operacao.subtrair(num1, num2);
 			}
-			else if(comboBoxCompBox().getSelectedItem() == "Multiplicar") {
+			else if(choseOp.getSelectedItem().equals("Multiplicar")) {
 				resultado = Operacao.multiplicar(num1, num2);
 			}
-			else if(comboBoxCompBox().getSelectedItem() == "Dividir") {
+			else if(choseOp.getSelectedItem().equals("Dividir")) {
 				resultado = Operacao.dividir(num1, num2);
 			}
-			result.setText(totalString);
+			result.setText(resultado.toString());
 		} catch (NullPointerException ex) {
 			JOptionPane.showMessageDialog(this, "Algum valor está nulo: " + ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
 		} catch (NumberFormatException ex) {
